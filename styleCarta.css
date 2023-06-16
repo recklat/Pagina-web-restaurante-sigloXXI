@@ -1,4 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+
+/*Estilos generales*/
+
+html{
+    font-family: system-ui;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*HERO*/
+
+
+header.main-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: aliceblue;
+    z-index: 9999;
+}
+
+.wrap-logo-header{
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+}
+
+.logo-header{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+ul.main-menu{
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+ul.main-menu #main-nav-reserva{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+ul.main-menu #main-nav-index{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: blueviolet;
+    color: aliceblue;}
+
+    ul.main-menu #main-nav-carta{
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        background-color: blueviolet;
+        color: aliceblue;}    
+
+li.menu-item{
+    margin: .75rem;
+    display: flex;
+}
+
+
+
+
+
 *{
     margin: 0;
     padding:0;
