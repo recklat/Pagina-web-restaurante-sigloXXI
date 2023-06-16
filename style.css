@@ -1,0 +1,181 @@
+/*Estilos generales*/
+
+html{
+    font-family: system-ui;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*HERO*/
+
+.hero{
+    background: url(img/sabrosa-pizza-cerca-ingredientes.jpg) center;
+    background-size: cover;
+    height: 100vh;
+}
+/* Menu Header Restaurante*/
+
+header.main-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: aliceblue;
+    z-index: 9999;
+}
+
+.wrap-logo-header{
+    display: flex;
+    align-items: center;
+    flex-basis: 15%;
+}
+
+.logo-header{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: black;
+}
+
+nav.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+ul.main-menu{
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+ul.main-menu #main-nav-reserva{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+ul.main-menu #main-nav-index{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: blueviolet;
+    color: aliceblue;}
+
+    ul.main-menu #main-nav-carta{
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        background-color: blueviolet;
+        color: aliceblue;}    
+
+li.menu-item{
+    margin: .75rem;
+    display: flex;
+}
+
+li.menu-item a{
+    padding: .5rem 1rem;
+    color: black;
+}
+
+li.menu-item a:hover{
+    color: blue;
+}
+
+i.toggle-menu{
+    display: none;
+    background-color: white;
+    border: none;
+    z-index: 9999;
+}
+
+i.toggle-menu img{
+    width: 27px;
+    z-index: 99;
+}
+
+input#check{
+    display: none;
+}
+
+@media (min-width:880px){
+    .header-wrap{
+        padding: .5rem 5rem;
+    }
+}
+
+@media (max-width:768){
+    header{
+        margin-bottom: 4rem;
+    }
+    .header-wrap{
+        position: fixed;
+        width: 100%;
+        background-color: aliceblue;
+        padding: 0;
+        top: 0; 
+        z-index: 9999;
+        height: 60;
+    }
+
+    .wrap-logo-header{
+    position: fixed;
+    z-index: 999;
+    top: 3%;
+    left: 3%;
+    }
+
+    i.toggle-menu{
+        display: fleX;
+    }
+
+    ul.main-menu, #main-nav-contact{
+        display: none;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.main-menu{
+        position: fixed;
+        background-color: aliceblue;
+    }
+
+    label.checkbtn{
+        position: fixed;
+        right: 3%;
+        top: 3%;
+        z-index: 9999;
+    }
+
+    #check:checked ~ ul{
+        display: flex;
+        z-index: 9;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        top: 0;
+        font-size: 2rem;
+    }
+}
