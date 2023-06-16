@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
 
-
 /*Estilos generales*/
 
 html{
@@ -89,33 +88,12 @@ li.menu-item{
 
 
 
-*{
-    margin: 0;
-    padding:0;
-    font-family: 'Open Sans';
-}
-header{
-    background: url(img/fondo-textura-madera.jpg);
-    background-size: cover;
-    background-position:center;
-    height: 300px;
-}
-header h1{
-    text-align: center;
-    font-size: 35px;
-    /* background-color: #000; */
-    color: #fff;
-    padding: 30px 0;
-}
-.contenedor{
-    max-width: 1200px;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    /* oculto lo que queda fuera del .contenedor */
-    contain: paint;
-}
+
+
+
+
+
+
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items{
     margin-top: 30px;
@@ -283,7 +261,6 @@ header h1{
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
-
 
 
 /* SECCION RESPONSIVE */
